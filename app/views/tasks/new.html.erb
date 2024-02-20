@@ -1,0 +1,11 @@
+<h1>Want to add a new task?</h1>
+
+
+
+<%= form_with model: @task do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :detail %>
+  <%= f.text_field :detail %>
+  <%= f.submit %>
+<% end %>
